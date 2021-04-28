@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html,body{
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #8e44ad;
+}
+
+.container{
+    background-color: #fff;
+    padding: 20px 40px;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.nome{
+    display: flex;
+}
+
+.nome input.nome{
+    width: 90%;
+}
+
+.form-container{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.header h2{
+    padding: 10px;
+}
+
+form{
+    padding: 10px;
+}
+
+form label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+form .form-container input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+form small{
+    display: relative;
+    position: absolute;
+}
+
+button{
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.sexo{
+    border: 1px solid grey;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.form-container.age input{
+    width: 30%;
+}
+
+/*food*/
+.food p{
+    padding-bottom: 10px;
+}
+
+.favorite-food{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px
+}
+
+p.fruit{
+    margin-bottom: 10px;
+}
+
+
+.form-container.eyes{
+    padding: 10px;
+}
+
+
+/*color:#e74c3c; red*/
+/*#2ecc71 green*/

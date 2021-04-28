@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form validation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create account</h2>
+        </div>
+        <form action="results.html" method="GET" id="form">
+            <div class="nome">
+                <div class="form-container">
+                    <label for="firstName">First Name</label>
+                    <input name="firstName" type="text" id="firstName"  class="nome"placeholder="First name">
+                    <small>error message</small>
+                </div>
+                <div class="form-container">
+                    <label for="lastName">last name</label>
+                    <input name="lastName" type="text" id="lastName" class="nome" placeholder="last name">
+                    <small>error message</small>
+                </div>
+            </div><!--nome-->
+            <div class="form-container">
+                <label for="email">E-mail</label>
+                <input name="email" type="email" id="email" placeholder="victorlira@gmail.com">
+            </div>
+            <div class="form-container">
+                <label for="password">Password</label>
+                <input name="password" type="password" id="password" placeholder="password">
+                <small>error message</small>
+            </div>
+            <div class="form-container">
+                <label for="password2">Password</label>
+                <input name="passwordCheck" type="password" id="password2" placeholder="password Check">
+                <small>error message</small>
+            </div>
+            <div class="form-container">
+                <label for="birthday">birthday</label>
+                <input name="birthday" type="date" id="birthday" min="1900-01-12">
+            </div>
+            <div class="form-container age">
+                <label for="age">Age</label>
+                <input name="age" type="number" id="age" min="1" max="200" placeholder="age" step="1">
+            </div>
+            <p>Gender</p>
+            <div class="sexo">
+                <div>
+                    <label for="male">Male</label>
+                    <input name="gender" type="radio" id="male" value="male">
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input name="gender" type="radio" id="female" value="female">
+                </div>
+            </div>
+            <p class="fruit">Favorite Fruit</p>
+            <div class="favorite-food">
+                <div >
+                    <div class="food">
+                        <label for="banana">Banana</label>
+                        <input type="checkbox" name="favoriteFruits" id="banana" value="banana">
+                    </div>
+                    <div class="food">
+                        <label for="apple">Apple</label>
+                        <input type="checkbox" name="favoriteFruits" id="apple" value="apple">
+                    </div>
+                    <div class="food">
+                        <label for="orange">Orange</label>
+                        <input type="checkbox" name="favoriteFruits" id="orange" value="orange">
+                    </div>
+                </div>
+                <div>
+                    <div class="food">
+                        <label for="grapes">Grapes</label>
+                        <input type="checkbox" name="favoriteFruits" id="grapes" value="grapes">
+                    </div>
+                    <div class="food">
+                        <label for="coconut">Coconut</label>
+                        <input type="checkbox" name="favoriteFruits" id="coconut" value="coconut">
+                    </div>
+                    <div class="food">
+                        <label for="pineapple">Pineapple</label>
+                        <input type="checkbox" name="favoriteFruits" id="pineapple" value="pineapple">
+                    </div>
+                </div>
+            </div>
+            <div class="form-container eyes">
+                <label for="eyeColor">Eye Color</label>
+                <select name="eyeColor" id="eyeColor">
+                    <option value="Green">Green</option>
+                    <option value="Red"> Red</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Black"> Black</option>
+                </select>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
