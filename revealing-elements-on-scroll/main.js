@@ -3,9 +3,10 @@ const allSections = document.querySelectorAll('.section');
 
 const removeHiddenClass = function (entries, observer) {
     const [entry] = entries;
-    console.log(entry)
+
     if (!entry.isIntersecting) return;
     entry.target.classList.remove('section--hidden');
+    observer.unobserve(entry.target);
 }
 
 const sectionObserver = new IntersectionObserver(removeHiddenClass, {
@@ -15,9 +16,6 @@ const sectionObserver = new IntersectionObserver(removeHiddenClass, {
 
 allSections.forEach(section => {
     sectionObserver.observe(section);
-})
-
-allSections.forEach(section => {
     section.classList.add('section--hidden')
 });
 
