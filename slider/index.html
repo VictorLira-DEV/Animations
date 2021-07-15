@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Image Slider | Autoplay With Navigation Visibility</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-
-    
-
-    <script type="text/javascript">
-    
-    </script>
-
-  </body>
+    <link rel="stylesheet" href="./style.css">
+    <title>slider</title>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slide" style="transform: translateX(0%);">
+                <img src="./images/img-1.jpg" alt="landscape 1">
+            </div>
+            <div class="slide " style="transform: translateX(100%);">
+                <img src="./images/img-2.jpg" alt="landscape 2">
+            </div>
+            <div class="slide">
+                <img src="./images/img-3.jpg" alt="landscape 3">
+            </div>
+            <div class="slide">
+                <img src="./images/img-4.jpg" alt="landscape 4">
+            </div>
+            <button class="slider__btn slider__btn--left">←</button>
+            <button class="slider__btn slider__btn--right">→</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
 </html>
